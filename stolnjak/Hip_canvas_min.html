@@ -6,10 +6,12 @@
     <title>Emscripten-Generated Code</title>
     <style>
       .emscripten { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
+      /* HIPMOD: set textarea width to 100% */
       textarea.emscripten { font-family: monospace; width: 100%; }
       div.emscripten { text-align: center; }
       div.emscripten_border { border: 1px solid black; }
       /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+      /* HIPMOD: changed canvas color to yellow */
       canvas.emscripten { border: 0px none; background-color: yellow; }
       .spinner {
         height: 50px;
@@ -43,6 +45,7 @@
         to {transform: rotate(360deg);}
       }
 
+      /* HIPMOD: white on black is better for console */
       #output {
         width: 100%;
         /* height: 200px; */
@@ -68,12 +71,13 @@
     <div class="emscripten">
       <progress value="0" max="100" id="progress" hidden=1></progress>  
     </div>
-    <!-- HIPMOD: setting canvas size -->
+    <!-- HIPMOD: set canvas size -->
     <div class="emscripten_border">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600" width="600"></canvas>
     </div>
    
-    <!-- <hr/>
+    <!-- HIPMOD: don't show unnecessary checkboxes
+    <hr/>
     <div class="emscripten">
       <input type="checkbox" id="resize">Resize canvas
       <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
@@ -83,6 +87,7 @@
     </div> -->
     
     <hr/>
+    <!-- HIPMOD: set number of rows for console output -->
     <textarea class="emscripten" id="output" rows="6"></textarea>
     <hr>
     <script type='text/javascript'>
