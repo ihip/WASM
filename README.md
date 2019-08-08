@@ -14,5 +14,7 @@
 
 - [hello.c](./hello/hello.c) ispisuje "Hello, world!" u konzolu: [hello.html](https://ihip.github.io/WASM/hello/hello.html)
 - [scanf.c](./scanf/scanf.c) ilustrira problem sa `scanf` naredbom za učitavanje: [scanf.html](https://ihip.github.io/WASM/scanf/scanf.html)
-- intervencijom u `scanf.js` korigirao sam problem beskonačne petlje kod učitavanja: [scanf-hip.html](https://ihip.github.io/WASM/scanf/scanf.html) (promjene su komentirane s `HIPMOD`)
+- intervencijom u `scanf.js` korigirao sam problem beskonačne petlje kod učitavanja: [scanf-hip.html](https://ihip.github.io/WASM/scanf/scanf-hip.html) (promjene u datoteci `scanf-hip.js` komentirane su s `HIPMOD`)
 - [stolnjak.c](./stolnjak/stolnjak.c) je primjer iscrtavanja grafike u canvasu: [stolnjak.html](https://ihip.github.io/WASM/stolnjak/stolnjak.html) (`shell_minimal.html` preradio sam u [Hip_canvas_min.html](./stolnjak/Hip_canvas_min.html) - promjene su komentirane s `HIPMOD`)
+
+*Hip, 2019-08-08*
